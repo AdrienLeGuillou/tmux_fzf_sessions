@@ -2,7 +2,7 @@
 
 # target_session=$(tmux display-popup -E "tmux list-sessions | fzf | echo")
 main () {
-    tmuxp_dir="$HOME/.tmuxp/"
+    tmuxp_dir="$HOME/.config/tmuxp/"
     active_sessions=$(tmux list-sessions)
     saved_sessions=$(ls $tmuxp_dir)
     all_sessions="$active_sessions"$'\n'"$saved_sessions"
